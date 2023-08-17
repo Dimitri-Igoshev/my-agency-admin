@@ -11,6 +11,7 @@ export const AppRoutes = () => {
       <Route path="/" element={<BaseLayout><Dashboard /></BaseLayout>} />
       <Route path="auth" element={<AuthLayout><Auth /></AuthLayout>} >
         <Route index element={<Login />} />
+        <Route path="login" element={<Login />} />
       </Route>
     </Routes>
   )
