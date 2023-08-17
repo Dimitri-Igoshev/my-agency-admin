@@ -16,7 +16,7 @@ export const Login = () => {
 		try {
 			const response = await axios.post('https://api.igoshev.de/auth/login', data)
 
-			if (response.data) navigate('/')
+			if (response.data) navigate('/dashboard')
 		} catch (err) {
 			console.log(err)
 		}
