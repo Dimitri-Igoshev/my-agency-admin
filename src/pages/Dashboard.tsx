@@ -1,9 +1,13 @@
-import { BaseLayout } from '../layouts/BaseLayout'
+import { useNavigate } from 'react-router-dom'
 
 export const Dashboard = () => {
+	const navigate = useNavigate()
+
 	return (
-		<BaseLayout>
+		<div className="h-screen flex flex-col justify-center items-center gap-5">
 			<div>Here will be admin panel!</div>
-		</BaseLayout>
+
+			<div className="cursor-pointer hover:text-red-500 underline" onClick={() => navigate('/auth')}>To login</div>
+		</div>
 	)
 }
